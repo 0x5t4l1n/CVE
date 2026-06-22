@@ -23,6 +23,7 @@ CVEs that were discovered and reported by Stalin S.
 | [CVE-2026-41039](reported/CVE-2026-41039.md) | Information Disclosure (Quantum Networks Router) | High (8.7) |
 | [CVE-2026-42290](reported/CVE-2026-42290.md) | protobufjs `pbts` Command Injection via Unsanitized File Paths | High |
 | [CVE-2026-45152](reported/CVE-2026-45152.md) | uniget Command Injection via Unsafe `tool.Check` Execution | High |
+| [CVE-2026-55061](reported/CVE-2026-55061.md) | uniget CLI Command Injection via EDITOR Environment Variable | Moderate |
 | [CVE-2026-9506](reported/CVE-2026-9506.md) | Path Traversal Vulnerability (Webkul Bagisto) | High (8.7) |
 
 ---
