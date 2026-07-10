@@ -25,6 +25,7 @@ CVEs that were discovered and reported by Stalin S.
 | [CVE-2026-45152](reported/CVE-2026-45152.md) | uniget Command Injection via Unsafe `tool.Check` Execution | High |
 | [CVE-2026-55061](reported/CVE-2026-55061.md) | uniget CLI Command Injection via EDITOR Environment Variable | Moderate |
 | [CVE-2026-55062](reported/CVE-2026-55062.md) | uniget CLI Path Traversal via Hook Filename | Moderate |
+| [CVE-2026-59924](reported/CVE-2026-59924.md) | Arbitrary File Read via Path Traversal (Mistune) | Medium (5.9) |
 | [CVE-2026-9506](reported/CVE-2026-9506.md) | Path Traversal Vulnerability (Webkul Bagisto) | High (8.7) |
 
 ---
