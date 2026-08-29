@@ -17,6 +17,7 @@ CVEs that were discovered and reported by Stalin S.
 
 | CVE | Description | Severity |
 |-----|-------------|----------|
+| [CVE-2026-19412](reported/CVE-2026-19412.md) | Hardcoded Credentials Vulnerability (CP Plus CP-XR-DE21-S Router) | High |
 | [CVE-2026-29905](reported/CVE-2026-29905.md) | Kirby CMS Persistent DoS via Malformed Image Upload | Medium |
 | [CVE-2026-30081](reported/CVE-2026-30081.md) | Quantum Networks QN-I-470 Cleartext Credential Transmission | Pending |
 | [CVE-2026-41037](reported/CVE-2026-41037.md) | Missing Rate Limiting (Quantum Networks Router) | High (8.7) |
