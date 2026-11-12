@@ -74,10 +74,11 @@ def update_readme(reported_entries: list, patched_entries: list) -> None:
     reported_table = build_table(reported_entries, "reported")
     patched_table = build_table(patched_entries, "patches")
 
-    # Pattern: from the table header row up to (but not including) the next heading or end
-    table_pattern = r"(\| CVE \| Description \| Severity \|.*?)(?=\n---|\n##|\Z)"
+    # Pattern: the table header row plus every following table row (lines starting with "|").
+    # Stopping at the last row keeps any content after the final table intact.
+    table_pattern = r"(\| CVE \| Description \| Severity \|\n(?:\|.*\n?)*)"
 
-    tables_found = re.findall(table_pattern, readme, flags=re.DOTALL)
+    tables_found = re.findall(table_pattern, readme)
     if len(tables_found) < 2:
         print("ERROR: Could not locate both tables in README.md", file=sys.stderr)
         sys.exit(1)
@@ -93,7 +94,7 @@ def update_readme(reported_entries: list, patched_entries: list) -> None:
             return reported_table
         return patched_table
 
-    new_readme = re.sub(table_pattern, replacer, readme, flags=re.DOTALL)
+    new_readme = re.sub(table_pattern, replacer, readme)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(new_readme)
